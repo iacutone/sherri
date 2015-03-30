@@ -1,0 +1,720 @@
+body {
+  margin: 0;
+  background: white;
+  text-align: center;
+  font: 12px "Gotham A", "Gotham B", sans-serif;
+  color: #292b2c;
+  line-height: 18px;
+}
+
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+a {
+  color: #8a8787;
+  text-decoration: none;
+  -webkit-transition: color 0.2s linear 0s;
+  -moz-transition: color 0.2s linear 0s;
+  -ms-transition: color 0.2s linear 0s;
+  -o-transition: color 0.2s linear 0s;
+  transition: color 0.2s linear 0s;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #292b2c;
+}
+
+/* line 111, ../scss/style.scss */
+input, textarea {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 116, ../scss/style.scss */
+::-webkit-input-placeholder {
+  color: black;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+}
+
+/* line 117, ../scss/style.scss */
+::-moz-placeholder {
+  color: black;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+}
+
+/* line 118, ../scss/style.scss */
+:-ms-input-placeholder {
+  color: black;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+}
+
+/* line 119, ../scss/style.scss */
+input:-moz-placeholder {
+  color: black;
+  font-family: "Gotham A", "Gotham B", sans-serif;
+}
+
+/* line 121, ../scss/style.scss */
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.5s 0.5s ease;
+  opacity: 0;
+}
+
+/* line 125, ../scss/style.scss */
+[placeholder]:focus::-moz-placeholder {
+  transition: opacity 0.5s 0.5s ease;
+  opacity: 0;
+}
+
+/* line 129, ../scss/style.scss */
+[placeholder]:focus::-ms-input-placeholder {
+  transition: opacity 0.5s 0.5s ease;
+  opacity: 0;
+}
+
+/* line 134, ../scss/style.scss */
+.nopadding {
+  padding: 0;
+}
+
+/* line 138, ../scss/style.scss */
+.right {
+  float: right;
+}
+
+/* end general styles */
+/* line 144, ../scss/style.scss */
+.hero {
+  width: 100%;
+}
+
+/* line 148, ../scss/style.scss */
+#top {
+  top: 20px;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+/* line 153, ../scss/style.scss */
+#top h1, #top h2 {
+  text-transform: none;
+}
+/* line 156, ../scss/style.scss */
+#top img {
+  width: 100%;
+  position: relative;
+  display: block;
+}
+/* line 161, ../scss/style.scss */
+#top img.mobile {
+  top: 40px;
+  display: none;
+}
+
+header {
+  background: white;
+  height: 120px;
+  padding: 0;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 180, ../scss/style.scss */
+header .logo {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 187, ../scss/style.scss */
+header nav {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* line 196, ../scss/style.scss */
+header.fixed {
+  z-index: 99999;
+  border-bottom: 1px solid #dbdbdb;
+  height: 60px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 205, ../scss/style.scss */
+header.fixed .logo {
+  margin-top: 20px;
+}
+/* line 208, ../scss/style.scss */
+header.fixed nav {
+  margin-top: 23px;
+}
+
+/* line 213, ../scss/style.scss */
+.header-wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 218, ../scss/style.scss */
+.logo {
+  float: left;
+  margin-top: 50px;
+  -webkit-transition: opacity 0.2s linear 0s;
+  -moz-transition: opacity 0.2s linear 0s;
+  -ms-transition: opacity 0.2s linear 0s;
+  -o-transition: opacity 0.2s linear 0s;
+  transition: opacity 0.2s linear 0s;
+}
+/* line 226, ../scss/style.scss */
+.logo img {
+  max-width: 210px;
+}
+
+nav {
+  float: right;
+  margin-top: 52px;
+}
+/* line 238, ../scss/style.scss */
+nav a {
+  margin-right: 30px;
+  font: 14px "Gotham A", "Gotham B", sans-serif;
+  font-weight: 500;
+  color: #8a8a8a;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 880px) {
+  /* line 1147, ../scss/style.scss */
+  #contact-block-one, #contact-block-two, #contact-block-three {
+    width: 33.33%;
+    text-align: center;
+  }
+
+  /* line 1151, ../scss/style.scss */
+  #contact-block-two {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 860px) {
+  /* line 1161, ../scss/style.scss */
+  #top {
+    top: 60px;
+  }
+
+  /* line 1164, ../scss/style.scss */
+  header {
+    height: 120px;
+    position: absolute;
+  }
+
+  /* line 1169, ../scss/style.scss */
+  .header-wrap {
+    width: 100%;
+  }
+
+  /* line 1173, ../scss/style.scss */
+  .logo {
+    float: none;
+    display: block;
+    margin: 0 auto 10px;
+    padding-top: 30px;
+  }
+
+  /* line 1181, ../scss/style.scss */
+  nav {
+    float: none;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* line 1186, ../scss/style.scss */
+  nav a, nav a.last {
+    margin: 0 15px 10px;
+    display: inline-block;
+    float: none;
+    text-align: center;
+  }
+
+  /* line 1194, ../scss/style.scss */
+  header.fixed .logo {
+    margin-top: 30px;
+  }
+  /* line 1197, ../scss/style.scss */
+  header.fixed nav {
+    margin-top: 33px;
+  }
+
+  /* line 1203, ../scss/style.scss */
+  #top h1 {
+    font-size: 32px;
+    padding-top: 160px;
+  }
+  /* line 1207, ../scss/style.scss */
+  #top h2 {
+    font-size: 22px;
+  }
+
+  /* line 1211, ../scss/style.scss */
+  .tophero-copy {
+    top: 320px;
+  }
+
+  /* line 1215, ../scss/style.scss */
+  #ingredients {
+    padding: 80px 0 20px;
+  }
+
+  /* line 1222, ../scss/style.scss */
+  .story-box img, .gum-box img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* line 1227, ../scss/style.scss */
+  .insta-feed {
+    display: block;
+    background: url("../../images/instasmall.jpg") no-repeat center;
+    background-size: contain;
+    height: 300px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 1238, ../scss/style.scss */
+  .hero {
+    background-position: center 0 !important;
+  }
+
+  /* line 1242, ../scss/style.scss */
+  a.welcome {
+    display: none;
+  }
+
+  /* line 1246, ../scss/style.scss */
+  #quality-transparency-simply {
+    height: 370px;
+    background-size: contain;
+  }
+
+  /* line 1251, ../scss/style.scss */
+  #making-it:before, #making-it {
+    height: 350px;
+  }
+
+  /* line 1255, ../scss/style.scss */
+  #quality-transparency-simply h3.first {
+    padding-top: 120px;
+  }
+
+  /* line 1258, ../scss/style.scss */
+  #quality-transparency-simply h3 {
+    padding-bottom: 10px;
+    font-size: 16px;
+  }
+
+  /* line 1262, ../scss/style.scss */
+  #quality-transparency-simply p {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 1268, ../scss/style.scss */
+  .story-hero {
+    width: 600px;
+  }
+
+  /* line 1271, ../scss/style.scss */
+  .story-box {
+    margin: 0 auto;
+  }
+
+  /* line 1276, ../scss/style.scss */
+  .gum-boxes-note p {
+    padding-bottom: 20px;
+  }
+  /* line 1279, ../scss/style.scss */
+  .gum-boxes-note p.larger {
+    padding-top: 0;
+  }
+
+  /* line 1284, ../scss/style.scss */
+  .gum-box {
+    margin-bottom: 50px;
+  }
+  /* line 1286, ../scss/style.scss */
+  .gum-box img {
+    width: 100%;
+  }
+
+  /* line 1290, ../scss/style.scss */
+  .ingredient {
+    margin-bottom: 40px;
+    width: 33.33%;
+    float: left;
+    clear: none;
+    position: relative;
+  }
+  /* line 1296, ../scss/style.scss */
+  .ingredient p {
+    height: auto;
+  }
+
+  /* line 1301, ../scss/style.scss */
+  .store-col p:last-child {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 1307, ../scss/style.scss */
+  .press-box-container {
+    margin-bottom: 20px;
+  }
+
+  /* line 1311, ../scss/style.scss */
+  .magazine-snippet {
+    margin-top: 50px;
+  }
+  /* line 1313, ../scss/style.scss */
+  .magazine-snippet img {
+    margin-bottom: 20px;
+  }
+  /* line 1316, ../scss/style.scss */
+  .magazine-snippet .magazine-copy h6 {
+    text-align: center;
+  }
+
+  /* line 1321, ../scss/style.scss */
+  .contact-block {
+    text-align: center;
+    float: left;
+    clear: none;
+  }
+  /* line 1325, ../scss/style.scss */
+  .contact-block a {
+    font-size: 13px;
+  }
+
+  /* line 1330, ../scss/style.scss */
+  footer {
+    padding-bottom: 30px;
+  }
+  /* line 1332, ../scss/style.scss */
+  footer .privacy-wrap, footer .handcrafted {
+    text-align: center;
+  }
+
+  /* line 1337, ../scss/style.scss */
+  form.mailchimp {
+    width: 65%;
+  }
+
+  /* line 1341, ../scss/style.scss */
+  form.mailchimp .inputfield {
+    width: 70%;
+  }
+
+  /* line 1345, ../scss/style.scss */
+  form.mailchimp input.button-newsletter {
+    float: right;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 1353, ../scss/style.scss */
+  #top h1 {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  /* line 1357, ../scss/style.scss */
+  #top h2 {
+    width: 90%;
+  }
+
+  /* line 1361, ../scss/style.scss */
+  .contact-block {
+    clear: both;
+    width: 100% !important;
+  }
+
+  /* line 1367, ../scss/style.scss */
+  .table .left, .table .right {
+    width: 100%;
+    text-align: left;
+  }
+
+  /* line 1373, ../scss/style.scss */
+  .hide-for-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 530px) {
+  /* line 1382, ../scss/style.scss */
+  nav a {
+    font-size: 12px;
+  }
+
+  /* line 1386, ../scss/style.scss */
+  #top h1 {
+    font-size: 24px;
+  }
+
+  /* line 1389, ../scss/style.scss */
+  #top h2 {
+    font-size: 18px;
+  }
+
+  /* line 1393, ../scss/style.scss */
+  .ingredient {
+    margin-bottom: 40px;
+    width: 50%;
+  }
+
+  /* line 1398, ../scss/style.scss */
+  #stores h3 {
+    padding: 0 10px 50px;
+    line-height: 28px;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 1407, ../scss/style.scss */
+  header {
+    height: 80px;
+  }
+
+  /* line 1410, ../scss/style.scss */
+  .logo {
+    padding-top: 33px;
+  }
+  /* line 1412, ../scss/style.scss */
+  .logo img {
+    max-width: 50%;
+  }
+
+  /* line 1416, ../scss/style.scss */
+  nav {
+    display: none;
+  }
+
+  /* line 1419, ../scss/style.scss */
+  .tophero-copy {
+    top: 220px;
+  }
+
+  /* line 1422, ../scss/style.scss */
+  .top-copy {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+  /* line 1425, ../scss/style.scss */
+  .top-copy h1 {
+    padding: 0 20px;
+    margin: 0;
+    font-size: 24px;
+  }
+  /* line 1430, ../scss/style.scss */
+  .top-copy h2 {
+    margin-top: 10px;
+    width: 100%;
+    line-height: 24px;
+  }
+
+  /* line 1436, ../scss/style.scss */
+  #top {
+    top: 40px;
+  }
+  /* line 1438, ../scss/style.scss */
+  #top img.mobile {
+    display: block;
+  }
+  /* line 1441, ../scss/style.scss */
+  #top img.desktop {
+    display: none;
+  }
+
+  /* line 1446, ../scss/style.scss */
+  #ingredients {
+    padding: 60px 0 20px;
+  }
+
+  /* line 1450, ../scss/style.scss */
+  #ingredients h5.ingredient-callout {
+    font-size: 14px;
+  }
+
+  /* line 1454, ../scss/style.scss */
+  #quality-transparency-simply h3.first {
+    padding-top: 85px;
+  }
+
+  /* line 1457, ../scss/style.scss */
+  #quality-transparency-simply h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* line 1462, ../scss/style.scss */
+  #quality-transparency-simply p {
+    font-size: 12px;
+    line-height: 16px;
+    margin: 10px 0;
+    padding-bottom: 0;
+  }
+
+  /* line 1469, ../scss/style.scss */
+  .gum-box.assorted-gum {
+    padding: 0 20px;
+  }
+
+  /* line 1472, ../scss/style.scss */
+  #story h3.story-title {
+    margin: 10px 0 30px;
+    padding: 0 10px;
+    font-size: 22px;
+  }
+
+  /* line 1477, ../scss/style.scss */
+  #story p {
+    padding: 0 10px;
+  }
+
+  /* line 1480, ../scss/style.scss */
+  .story-hero {
+    width: 100%;
+    height: 300px;
+    margin: 0;
+  }
+
+  /* line 1485, ../scss/style.scss */
+  #stores {
+    padding: 20px 0 40px;
+  }
+
+  /* line 1488, ../scss/style.scss */
+  #stores h3 {
+    padding: 0 0 20px 0;
+    font-size: 22px;
+  }
+
+  /* line 1495, ../scss/style.scss */
+  form.mailchimp {
+    width: 95%;
+    float: left;
+  }
+  /* line 1498, ../scss/style.scss */
+  form.mailchimp input::-webkit-input-placeholder {
+    font-size: 10px;
+  }
+  /* line 1499, ../scss/style.scss */
+  form.mailchimp input::-moz-placeholder {
+    font-size: 10px;
+  }
+  /* line 1500, ../scss/style.scss */
+  form.mailchimp input:-ms-input-placeholder {
+    font-size: 10px;
+  }
+  /* line 1501, ../scss/style.scss */
+  form.mailchimp input:-moz-placeholder {
+    font-size: 10px;
+  }
+
+  /* line 1503, ../scss/style.scss */
+  form.mailchimp input.button-newsletter {
+    width: 80px;
+  }
+
+  /* line 1507, ../scss/style.scss */
+  .golden-spoon {
+    width: 280px;
+  }
+
+  /* line 1512, ../scss/style.scss */
+  .ingredient-img-wrap {
+    float: none;
+  }
+
+  /* line 1516, ../scss/style.scss */
+  .hero {
+    background-attachment: scroll !important;
+  }
+
+  /* line 1520, ../scss/style.scss */
+  #contact-block-one, #contact-block-two, #contact-block-three {
+    width: 100%;
+  }
+
+  /* line 1524, ../scss/style.scss */
+  #story h6 {
+    font-size: 15px;
+  }
+
+  /* line 1528, ../scss/style.scss */
+  .gum-boxes-note p.larger {
+    font-size: 16px;
+  }
+
+  /* line 1533, ../scss/style.scss */
+  #ingredients h5 {
+    font-size: 24px;
+    padding: 0 20px 30px;
+    line-height: 30px;
+  }
+
+  /* line 1540, ../scss/style.scss */
+  .rather-chew {
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  /* line 1545, ../scss/style.scss */
+  .plastics-info .plastics-copy {
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  /* line 1550, ../scss/style.scss */
+  #button-nutritional-facts {
+    margin-top: 45px;
+  }
+
+  /* line 1554, ../scss/style.scss */
+  #press h6.subtitle {
+    line-height: 24px;
+    padding: 0 20px 50px;
+  }
+
+  /* line 1559, ../scss/style.scss */
+  .magazine-snippet .magazine-copy h6 {
+    text-align: left;
+  }
+
+  /* line 1563, ../scss/style.scss */
+  footer {
+    font-size: 10px;
+  }
+  /* line 1565, ../scss/style.scss */
+  footer p {
+    padding-bottom: 10px;
+  }
+}
