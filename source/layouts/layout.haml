@@ -17,15 +17,15 @@
     %nav.navbar.navbar-default.navbar-fixed-top
       .container-fluid
         .navbar-header
-          .navlinks
-            %a.navbar-brand{href: '#top'} Vida Verde Trading Co.
-            %ul.nav.navbar-nav
-              %li
-                %a{href: '#products'} Our Products
-              %li
-                %a{href: '#about'} Our Story
-              %li
-                %a{href: '#contact'} Contact Us
+          %a.navbar-brand{href: '#top'} Vida Verde Trading Co.
+        .collapse.navbar-collapse
+          %ul.nav.navbar-nav.navbar-right
+            %li
+              %a{href: '#products'} Our Products
+            %li
+              %a{href: '#about'} Our Story
+            %li
+              %a{href: '#contact'} Contact Us
 
     .container-fluid
       = yield
